@@ -31,7 +31,7 @@ public class LoginTest extends BaseClass {
     @Test(groups = "regression")
     public void verifyLoginBlog() {
        LoginPage lp=new LoginPage(driver);
-       lp.clickOnBlogBtn();
+       lp.clickOnBlogBtn();//this is an loginBlog action
        Assert.assertEquals(lp.getblogPageTxt(), GlobalProperties.getExpvalues("blogHdr.Txt"));
        lp.takeScreenShot("blogPage");
     }
